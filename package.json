@@ -1,0 +1,16 @@
+{
+  "name": "service-design-curso",
+  "version": "1.0.0",
+  "description": "Mini-curso gratuito de fundamentos de Service Design",
+  "license": "MIT",
+  "scripts": {
+    "prepare:aulas": "node scripts/prepare-aulas.js",
+    "build": "npm run prepare:aulas && eleventy",
+    "start": "npm run prepare:aulas && eleventy --serve",
+    "dev": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it": "^14.1.0"
+  }
+}

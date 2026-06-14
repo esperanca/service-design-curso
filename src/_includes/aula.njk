@@ -1,0 +1,31 @@
+---
+layout: base.njk
+---
+<article class="wrapper aula">
+  <header class="aula-head flow">
+    <p class="badge">{{ order | pad2 }} · {{ phase }}</p>
+    <h1>{{ title }}</h1>
+    {% if summary %}<p class="lede">{{ summary }}</p>{% endif %}
+  </header>
+
+  <div class="prose flow">
+    {{ content | safe }}
+  </div>
+
+  {% set prev = collections.aula | getPreviousCollectionItem %}
+  {% set next = collections.aula | getNextCollectionItem %}
+  <nav class="pager" aria-label="Navegação entre aulas">
+    {% if prev %}
+      <a class="prev" href="{{ prev.url }}">
+        <span class="pager__dir">← Anterior</span>
+        <span class="pager__title">{{ prev.data.title }}</span>
+      </a>
+    {% endif %}
+    {% if next %}
+      <a class="next" href="{{ next.url }}">
+        <span class="pager__dir">Próxima →</span>
+        <span class="pager__title">{{ next.data.title }}</span>
+      </a>
+    {% endif %}
+  </nav>
+</article>

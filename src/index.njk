@@ -1,0 +1,43 @@
+---
+layout: base.njk
+---
+<section class="wrapper hero">
+  <p class="hero__eyebrow">Mini-curso gratuito · Aprendendo em público</p>
+  <h1>Fundamentos de <em>Service Design</em></h1>
+  <p class="hero__lede">
+    Sete aulas curtas para entender o que é Service Design, por que ele importa
+    e como aplicar suas ferramentas básicas — de pensamento sistêmico a service
+    blueprints. Sem pré-requisitos.
+  </p>
+</section>
+
+<section class="strip">
+  <div class="wrapper">
+    <h2>Organizado em torno de um processo, não de uma lista de ferramentas</h2>
+    <div class="pills">
+      <span class="pill">Centrado no ser humano</span>
+      <span class="pill">Colaborativo</span>
+      <span class="pill">Iterativo</span>
+      <span class="pill">Sequencial</span>
+      <span class="pill">Baseado em evidências</span>
+      <span class="pill">Holístico</span>
+      <span class="pill">Double Diamond: Descobrir → Definir → Desenvolver → Entregar</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrapper lessons-section">
+  <h2 class="section-title">As aulas</h2>
+  <ol class="lessons" role="list">
+    {% for aula in collections.aula %}
+      <li>
+        <a class="card" href="{{ aula.url }}">
+          <span class="card__num">{{ aula.data.order | pad2 }}</span>
+          <span class="card__phase">{{ aula.data.phase }}</span>
+          <h3 class="card__title">{{ aula.data.title }}</h3>
+          <p class="card__summary">{{ aula.data.summary }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
