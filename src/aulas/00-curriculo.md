@@ -5,7 +5,7 @@ phase: "Visão geral"
 summary: "Como o mini-curso está organizado: os princípios do Service Design, o Double Diamond e o mapa das sete aulas."
 ---
 
-> Material derivado e expandido a partir das notas do curso pago "Service Design" da Experience Haus (ver `../service-designing/src/site/notes/`). O material original não foi alterado — este é um currículo novo e autônomo, pensado como porta de entrada gratuita para o tema.
+> Material derivado e expandido a partir das notas de um curso de Service Design (ver `../service-designing/src/site/notes/`). O material original não foi alterado — este é um currículo novo e autônomo, pensado como porta de entrada gratuita para o tema.
 
 ## Para quem é
 

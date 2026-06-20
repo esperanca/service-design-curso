@@ -122,7 +122,7 @@ Combine com a lição de Meadows: às vezes a intervenção de maior impacto nã
 
 1. **Aprofunde um dos artefatos** que você criou — escolha o mais revelador e refine com pesquisa real (entrevistas de verdade, se possível).
 2. **Compartilhe seu trabalho** — em Service Design, "aprender em público" é parte do método. Este mini-curso, aliás, nasce de um [digital garden](https://maggieappleton.com/garden-history) com a mesma filosofia.
-3. **Considere o curso completo** — este mini-curso cobre os fundamentos; o curso pago da [[Team/Our team|Experience Haus]] aprofunda métodos, ferramentas e projetos guiados.
+3. **Considere se aprofundar** — este mini-curso cobre os fundamentos; um curso completo de Service Design aprofunda métodos, ferramentas e projetos guiados com acompanhamento.
 4. **Continue questionando definições** — como vimos na Aula 1, Service Design não tem uma definição única. A sua vai evoluir conforme você aplica essas ferramentas em contextos reais.
 
 ## Feedback sobre este mini-curso

@@ -8,8 +8,9 @@ module.exports = function (eleventyConfig) {
   // Copia o CSS como está
   eleventyConfig.addPassthroughCopy("src/css");
 
-  // Markdown com HTML embutido e tipografia "esperta"
-  const md = markdownIt({ html: true, linkify: false, typographer: true });
+  // Markdown: HTML bruto desabilitado (blindagem contra XSS — o conteúdo não
+  // usa tags HTML; tabelas, citações e código continuam funcionando)
+  const md = markdownIt({ html: false, linkify: false, typographer: true });
   eleventyConfig.setLibrary("md", md);
 
   // Coleção das aulas, ordenada pelo campo `order` do front matter
